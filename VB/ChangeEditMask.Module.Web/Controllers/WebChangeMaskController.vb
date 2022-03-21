@@ -6,8 +6,8 @@ Imports ChangeEditMask.Module.Controllers
 Imports DevExpress.ExpressApp.Web.Editors.ASPx
 Imports DevExpress.Web
 
-Namespace ChangeEditMask.Module.Win.Controllers
-    Public Class WinChangeMaskController
+Namespace ChangeEditMask.Module.Web.Controllers
+    Public Class WebChangeMaskController
         Inherits ChangeMaskControllerBase
 
         Protected Overrides Sub SetControlMaskSettings(ByVal propertyEditor As DevExpress.ExpressApp.Editors.PropertyEditor, ByVal mask As BusinessObjects.EditMask)
