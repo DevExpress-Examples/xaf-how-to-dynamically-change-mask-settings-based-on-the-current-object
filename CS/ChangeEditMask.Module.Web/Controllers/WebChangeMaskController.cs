@@ -6,8 +6,8 @@ using ChangeEditMask.Module.Controllers;
 using DevExpress.ExpressApp.Web.Editors.ASPx;
 using DevExpress.Web;
 
-namespace ChangeEditMask.Module.Win.Controllers {
-    public class WinChangeMaskController : ChangeMaskControllerBase {
+namespace ChangeEditMask.Module.Web.Controllers {
+    public class WebChangeMaskController : ChangeMaskControllerBase {
         protected override void SetControlMaskSettings(DevExpress.ExpressApp.Editors.PropertyEditor propertyEditor, BusinessObjects.EditMask mask) {
             if (propertyEditor is ASPxStringPropertyEditor) {
                 ASPxTextBox textEdit = ((ASPxStringPropertyEditor)propertyEditor).Editor as ASPxTextBox;
