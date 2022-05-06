@@ -1,12 +1,10 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
+Imports System
 Imports DevExpress.ExpressApp
 Imports ChangeEditMask.Module.BusinessObjects
 Imports DevExpress.ExpressApp.Editors
 
 Namespace ChangeEditMask.Module.Controllers
+
     Public Class ChangeMaskControllerBase
         Inherits ObjectViewController(Of DetailView, DemoObject)
 
@@ -14,7 +12,7 @@ Namespace ChangeEditMask.Module.Controllers
             MyBase.OnActivated()
             AddHandler View.CurrentObjectChanged, AddressOf View_CurrentObjectChanged
             AddHandler ObjectSpace.ObjectChanged, AddressOf ObjectSpace_ObjectChanged
-            AddHandler View.FindItem("TestString").ControlCreated, AddressOf ChangeMaskControllerBase_ControlCreated
+            AddHandler View.FindItem("TestString").ControlCreated, AddressOf Me.ChangeMaskControllerBase_ControlCreated
         End Sub
 
         Private Sub ChangeMaskControllerBase_ControlCreated(ByVal sender As Object, ByVal e As EventArgs)
@@ -22,7 +20,7 @@ Namespace ChangeEditMask.Module.Controllers
         End Sub
 
         Private Sub ObjectSpace_ObjectChanged(ByVal sender As Object, ByVal e As ObjectChangedEventArgs)
-            If e.PropertyName = "Mask" AndAlso e.NewValue <> e.OldValue Then
+            If Equals(e.PropertyName, "Mask") AndAlso e.NewValue IsNot e.OldValue Then
                 UpdateMaskSettings()
             End If
         End Sub
@@ -44,7 +42,7 @@ Namespace ChangeEditMask.Module.Controllers
             MyBase.OnDeactivated()
             RemoveHandler View.CurrentObjectChanged, AddressOf View_CurrentObjectChanged
             RemoveHandler ObjectSpace.ObjectChanged, AddressOf ObjectSpace_ObjectChanged
-            RemoveHandler View.FindItem("TestString").ControlCreated, AddressOf ChangeMaskControllerBase_ControlCreated
+            RemoveHandler View.FindItem("TestString").ControlCreated, AddressOf Me.ChangeMaskControllerBase_ControlCreated
         End Sub
     End Class
 End Namespace
