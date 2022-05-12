@@ -1,12 +1,9 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
 Imports ChangeEditMask.Module.Controllers
 Imports DevExpress.ExpressApp.Win.Editors
 Imports DevExpress.XtraEditors
 
 Namespace ChangeEditMask.Module.Win.Controllers
+
     Public Class WinChangeMaskController
         Inherits ChangeMaskControllerBase
 
