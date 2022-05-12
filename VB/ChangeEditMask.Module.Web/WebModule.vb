@@ -6,7 +6,6 @@ Imports DevExpress.ExpressApp.Updating
 
 Namespace ChangeEditMask.Module.Web
 
-    <ToolboxItemFilter("Xaf.Platform.Web")>
     ' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppModuleBasetopic.
     Public NotInheritable Partial Class ChangeEditMaskAspNetModule
         Inherits ModuleBase

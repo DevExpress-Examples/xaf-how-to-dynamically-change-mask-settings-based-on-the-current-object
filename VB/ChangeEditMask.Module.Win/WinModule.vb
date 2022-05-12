@@ -6,7 +6,6 @@ Imports DevExpress.ExpressApp.Updating
 
 Namespace ChangeEditMask.Module.Win
 
-    <ToolboxItemFilter("Xaf.Platform.Win")>
     ' For more typical usage scenarios, be sure to check out http://documentation.devexpress.com/#Xaf/clsDevExpressExpressAppModuleBasetopic.
     Public NotInheritable Partial Class ChangeEditMaskWindowsFormsModule
         Inherits ModuleBase
