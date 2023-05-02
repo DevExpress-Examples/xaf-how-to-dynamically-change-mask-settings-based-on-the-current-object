@@ -1,4 +1,5 @@
 ﻿using DevExpress.ExpressApp.Blazor.Editors;
+using DevExpress.ExpressApp.Blazor.Editors.Adapters;
 using DynamicMask.Module.BusinessObjects;
 using DynamicMask.Module.Controllers;
 
@@ -8,6 +9,8 @@ namespace ChangeEditMask.Module.Web.Controllers {
             if (propertyEditor is StringPropertyEditor stringEditor) {
 
                 //    ASPxTextBox textEdit = ((ASPxStringPropertyEditor)propertyEditor).Editor as ASPxTextBox;
+                //var t = stringEditor.Control as DxTextBoxAdapter;
+                //var t2 = t.ComponentModel;
                 //    if (textEdit != null) {
                 switch (mask) {
                     case EditMask.Date:
@@ -17,7 +20,9 @@ namespace ChangeEditMask.Module.Web.Controllers {
                         stringEditor.EditMask = "hh:mm tt";
                         break;
                     case EditMask.Numeric:
-                        stringEditor.EditMask = "(000) 000-0000";
+                        //   stringEditor.EditMask = "(000) 000-0000";
+                        stringEditor.Model.EditMask = "(000) 000-0000";
+                        View.Refresh();
                         break;
                     case EditMask.String:
                         break;
