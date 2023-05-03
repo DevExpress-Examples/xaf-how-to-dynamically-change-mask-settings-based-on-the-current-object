@@ -4,11 +4,5 @@
   <SchemaModules>
     <SchemaModule Name="SystemModule" Version="22.2.5.0" IsNewNode="True" />
   </SchemaModules>
-  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor">
-    <DetailView Id="DemoObject_DetailView">
-      <Items>
-        <PropertyEditor Id="TestString" EditMask="(000) 000-0000" />
-      </Items>
-    </DetailView>
-  </Views>
+  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor" />
 </Application>

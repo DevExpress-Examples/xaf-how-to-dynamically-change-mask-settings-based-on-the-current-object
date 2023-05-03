@@ -5,6 +5,7 @@ using System.Text;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
+using DevExpress.ExpressApp.Model;
 
 namespace DynamicMask.Module.BusinessObjects {
     [DefaultClassOptions]
@@ -17,6 +18,7 @@ namespace DynamicMask.Module.BusinessObjects {
             set { SetPropertyValue("Mask", ref _Mask, value); }
         }
         private string _TestString;
+        [ModelDefault("EditMask", "(000) 000-0000")]
         public string TestString {
             get { return _TestString; }
             set { SetPropertyValue("TestString", ref _TestString, value); }
