@@ -7,9 +7,9 @@
 *Files to look at*:
 
 * [WebChangeMaskController.cs](./CS/ChangeEditMask.Module.Web/Controllers/WebChangeMaskController.cs) (VB: [WebChangeMaskController.vb](./VB/ChangeEditMask.Module.Web/Controllers/WebChangeMaskController.vb))
-* [WinChangeMaskController.cs](./CS/ChangeEditMask.Module.Win/Controllers/WinChangeMaskController.cs) (VB: [WinChangeMaskController.vb](./VB/ChangeEditMask.Module.Win/Controllers/WinChangeMaskController.vb))
-* [DemoObject.cs](./CS/ChangeEditMask.Module/BusinessObjects/DemoObject.cs) (VB: [DemoObject.vb](./VB/ChangeEditMask.Module/BusinessObjects/DemoObject.vb))
-* **[ChangeMaskControllerBase.cs](./CS/ChangeEditMask.Module/Controllers/ChangeMaskControllerBase.cs) (VB: [ChangeMaskControllerBase.vb](./VB/ChangeEditMask.Module/Controllers/ChangeMaskControllerBase.vb))**
+* [WinChangeMaskController.cs](./CS/EFCore/DynamicMaskEF/DynamicMaskEF.Win/Controllers/WinChangeMaskController.cs)
+* [DemoObject.cs](./CS/EFCore/DynamicMaskEF/DynamicMaskEF.Module/BusinessObjects/DemoObject.cs )
+* **[ChangeMaskControllerBase.cs](./CS/EFCore/DynamicMaskEF/DynamicMaskEF.Module/Controllers/ChangeMaskControllerBase.cs)**
 <!-- default file list end -->
 # How to dynamically change mask settings based on the current object
 
