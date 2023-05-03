@@ -7,12 +7,8 @@ using DynamicMask.Module.Controllers;
 namespace ChangeEditMask.Module.Web.Controllers {
     public class BlazorChangeMaskController : ChangeMaskControllerBase {
         protected override void SetControlMaskSettings(DevExpress.ExpressApp.Editors.PropertyEditor propertyEditor, EditMask mask) {
-            if (propertyEditor is StringPropertyEditor stringEditor) {
-                var adapter = stringEditor.Control as DxMaskedInputAdapter;
-                var componentModel = adapter?.ComponentModel;
-                if (componentModel == null) {
-                    return;
-                }
+            if (propertyEditor is StringPropertyEditor stringEditor && stringEditor.Control is DxMaskedInputAdapter adapter) {
+                var componentModel = adapter.ComponentModel;
                 switch (mask) {
                     case EditMask.Date:
                         componentModel.MaskMode = DevExpress.Blazor.MaskMode.DateTime;
