@@ -20,4 +20,7 @@
     <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="22.2.5" />
     <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="22.2.5" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicMaskEF.Module\DynamicMaskEF.Module.csproj" />
+  </ItemGroup>
 </Project>

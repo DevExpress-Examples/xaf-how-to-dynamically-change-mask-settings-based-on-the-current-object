@@ -5,6 +5,7 @@ using DevExpress.Persistent.BaseImpl.EF.PermissionPolicy;
 using DevExpress.Persistent.BaseImpl.EF;
 using DevExpress.ExpressApp.Design;
 using DevExpress.ExpressApp.EFCore.DesignTime;
+using DynamicMask.Module.BusinessObjects;
 
 namespace DynamicMaskEF.Module.BusinessObjects;
 
@@ -34,7 +35,7 @@ public class DynamicMaskEFDesignTimeDbContextFactory : IDesignTimeDbContextFacto
 public class DynamicMaskEFEFCoreDbContext : DbContext {
 	public DynamicMaskEFEFCoreDbContext(DbContextOptions<DynamicMaskEFEFCoreDbContext> options) : base(options) {
 	}
-	//public DbSet<ModuleInfo> ModulesInfo { get; set; }
+	public DbSet<DemoObject> DemoObjects { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) {
         base.OnModelCreating(modelBuilder);
