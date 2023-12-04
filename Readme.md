@@ -11,7 +11,7 @@ This example demonstrates how to change mask settings of a certain editor dyn
 
 There are two ways to implement this functionality:
 
-1. Implement a ViewController that handles the current View's events and changes settings of the required editors, as shown in the [Access the Settings of a Property Editor in a Detail View](https://docs.devexpress.com/eXpressAppFramework/402153/getting-started/in-depth-tutorial-blazor/customize-data-display-and-view-layout/access-editor-settings).
+1. Implement a ViewController that handles the current View's events and changes settings of the required editors, as shown in the [Access the Settings of a Property Editor in a Detail View](https://docs.devexpress.com/eXpressAppFramework/402153/getting-started/in-depth-tutorial-blazor/customize-data-display-and-view-layout/access-editor-settings).
 2. Implement a custom Property Editor (e.g. a descendant of the corresponding built-in property editor) and change settings of its control. Refer to the following section for additional information: [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors?p=netframework).
 
 In this example, we demonstrate the first approach. To implement it, the following classes are added:
