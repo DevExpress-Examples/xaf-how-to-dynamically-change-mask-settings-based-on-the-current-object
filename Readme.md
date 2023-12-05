@@ -11,16 +11,17 @@ This example demonstrates how to change mask settings of a certain editor dyn
 
 There are two ways to implement this functionality:
 
-1. Implement a ViewController that handles the current View's events and changes settings of the required editors, as shown in the [Access the Settings of a Property Editor in a Detail View](https://docs.devexpress.com/eXpressAppFramework/402153/getting-started/in-depth-tutorial-blazor/customize-data-display-and-view-layout/access-editor-settings).
-2. Implement a custom Property Editor (e.g. a descendant of the corresponding built-in property editor) and change settings of its control. Refer to the following section for additional information: [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors?p=netframework).
+1. Implement a `ViewController` that handles events of the current view and changes settings of required editors, as shown in the following topic: [Access the Settings of a Property Editor in a Detail View](https://docs.devexpress.com/eXpressAppFramework/402153/getting-started/in-depth-tutorial-blazor/customize-data-display-and-view-layout/access-editor-settings).
+2. Implement a custom Property Editor (e.g. a descendant of the corresponding built-in property editor) and change settings of its control. For more information, refer to the following help section: [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/ui-construction/view-items-and-property-editors/property-editors?p=netframework).
 
-In this example, we demonstrate the first approach. To implement it, the following classes are added:
-* `DemoObject` - a persistent class with the TestString and Mask properties. Mask settings of the TestString property are changed based on the Mask property value;
-* `ChangeMaskControllerBase` - a platform-independent controller that handles events required for updating mask settings at an appropriate moment;
-* `WinChangeMaskController` - a WinForms-specific controller that customizes settings of a WinForms control;
-* `BlazorChangeMaskController` - an Blazor-specific controller that customizes settings of an Blazor control.
+This example demonstrates the first approach. To implement it, the following classes are added:
 
-Note that these approaches can be used only for detail views. To implement the same functionality in a ListView, create a ViewController for it and customize its List Editor according to specifics of the List Editor's control (see [How to: Access the Grid Component in a List View](https://docs.devexpress.com/eXpressAppFramework/402154/ui-construction/list-editors/how-to-access-list-editor-control)). For example, in WinForms you can use the `GridView.CustomColumnDisplayText` event to pass the required text directly to the grid cell. You can also use the `GridView.CustomRowCellEdit` event to provide editors with different settings for different rows. 
+* `DemoObject` - a persistent class with `TestString` and `Mask` properties. Mask settings of the `TestString` property are changed based on the value of the `Mask` property.
+* `ChangeMaskControllerBase` - a platform-independent controller that handles events required to update the mask settings at the appropriate time.
+* `WinChangeMaskController` - a WinForms-specific controller that customizes settings of a WinForms control.
+* `BlazorChangeMaskController` - an Blazor-specific controller that customizes settings of a Blazor control.
+
+Note that these approaches can be used only for detail views. To implement the same functionality in a ListView, create a ViewController for it and customize its List Editor according to specifics of the List Editor's control (see [How to: Access the Grid Component in a List View](https://docs.devexpress.com/eXpressAppFramework/402154/ui-construction/list-editors/how-to-access-list-editor-control)). For example, in WinForms you can use the `GridView.CustomColumnDisplayText` event to pass the required text directly to a grid cell. You can also use the `GridView.CustomRowCellEdit` event to supply editors with different settings for different rows. 
 
 ## Files to Review
 
