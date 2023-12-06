@@ -8,6 +8,7 @@
 This example demonstrates how to change mask settings of a certain editor dynamically, e.g. based on properties of the current object.
   
 <kbd>![example](./CS/EFCore/DynamicMaskEF/DynamicMaskEF.Module/Images/how-to-dynamically-change-mask-settings.gif)</kbd>
+
 ## Implementation Details
 
 There are two ways to implement this functionality:
