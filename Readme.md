@@ -5,7 +5,7 @@
 
 # XAF - How to dynamically change mask settings based on the current object
 
-This example demonstrates how to change mask settings of a certain editor dynamically, e.g. based on properties of the current object.
+This example demonstrates how to change mask settings of a certain editor dynamically (for example, based on properties of the current object).
   
 <kbd>![example](./CS/EFCore/DynamicMaskEF/DynamicMaskEF.Module/Images/how-to-dynamically-change-mask-settings.gif)</kbd>
 
@@ -21,7 +21,7 @@ This example demonstrates the first approach. To implement it, the following cla
 * `DemoObject` - a persistent class with `TestString` and `Mask` properties. Mask settings of the `TestString` property are changed based on the value of the `Mask` property.
 * `ChangeMaskControllerBase` - a platform-independent controller that handles events required to update the mask settings at the appropriate time.
 * `WinChangeMaskController` - a WinForms-specific controller that customizes settings of a WinForms control.
-* `BlazorChangeMaskController` - an Blazor-specific controller that customizes settings of a Blazor control.
+* `BlazorChangeMaskController` - a Blazor-specific controller that customizes settings of a Blazor control.
 
 Note that these approaches can be used only for detail views. To implement the same functionality in a ListView, create a ViewController for it and customize its List Editor according to specifics of the List Editor's control (see [How to: Access the Grid Component in a List View](https://docs.devexpress.com/eXpressAppFramework/402154/ui-construction/list-editors/how-to-access-list-editor-control)). For example, in WinForms you can use the `GridView.CustomColumnDisplayText` event to pass the required text directly to a grid cell. You can also use the `GridView.CustomRowCellEdit` event to supply editors with different settings for different rows. 
 
