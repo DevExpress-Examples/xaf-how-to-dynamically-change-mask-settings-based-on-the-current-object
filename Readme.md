@@ -2,6 +2,7 @@
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128589903/22.2.5%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T236972)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 
 # XAF - How to dynamically change mask settings based on the current object
@@ -43,3 +44,10 @@ Note that these approaches can be used only for detail views. To implement the
 * [Multi-currency DisplayFormats in a ListView](https://supportcenter.devexpress.com/ticket/details/q310943/multi-currency-displayformats-in-a-listview)
 * [Formatting depending on another field value](https://supportcenter.devexpress.com/ticket/details/q500155/formatting-depending-on-another-field-value)
 * [How to apply a (DisplayFormat) Mask to a value shown in a ListView?](https://supportcenter.devexpress.com/ticket/details/t297444/how-to-apply-a-displayformat-mask-to-a-value-shown-in-a-listview)
+<!-- feedback -->
+## Does this example address your development requirements/objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=xaf-how-to-dynamically-change-mask-settings-based-on-the-current-object&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=xaf-how-to-dynamically-change-mask-settings-based-on-the-current-object&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
