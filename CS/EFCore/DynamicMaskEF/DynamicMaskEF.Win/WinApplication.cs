@@ -18,7 +18,6 @@ public class DynamicMaskEFWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "DynamicMaskEF";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += DynamicMaskEFWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += DynamicMaskEFWindowsFormsApplication_CustomizeLanguagesList;
     }

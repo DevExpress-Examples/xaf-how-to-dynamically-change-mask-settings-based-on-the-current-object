@@ -14,7 +14,6 @@ public class DynamicMaskWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "DynamicMask";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += DynamicMaskWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += DynamicMaskWindowsFormsApplication_CustomizeLanguagesList;
     }
